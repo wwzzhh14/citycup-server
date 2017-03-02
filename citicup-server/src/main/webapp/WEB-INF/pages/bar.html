@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>柱状图</title>
+    <script text="text/script" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script text="text/script" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.2.3/echarts.min.js"></script>
+    <style type="text/css">
+        html{
+            width:605px;
+            height:262px;
+        }
+        body{
+            margin:0 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="bar" style="width: 605px;height:262px;"></div>
+</body>
+<script>
+    var myChart = echarts.init(document.getElementById('bar'));
+
+    option = {
+        backgroundColor: '#1b1b1b',
+        color: ['#f25534'],
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis : [
+            {
+                type : 'category',
+                axisLine:{
+                    lineStyle:{
+                        color:'white',
+                    },
+                },
+                data : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun','asd','dfg','eee','eee'],
+                axisTick: {
+                    alignWithLabel: true
+                }
+            }
+        ],
+        yAxis : [
+            {
+                type : 'value',
+                axisLine:{
+                    lineStyle:{
+                        color:'white',
+                    },
+                },
+            }
+        ],
+        series : [
+            {
+                name:'频率',
+                type:'bar',
+                barWidth: '60%',
+                data:[10, 52, 200, 334, 390, 330, 220,212,432,112.2,222]
+            }
+        ]
+    };
+
+    myChart.setOption(option);
+</script>
+</html>

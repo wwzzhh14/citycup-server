@@ -1,0 +1,64 @@
+.login_frame{
+    position:relative;
+    height:400px;
+    width:550px;
+    padding-right:30px;
+    border-radius:5px;
+    background:#5d5d5d;
+    margin-top: 150px;
+}
+.item_header{
+    color: #e74000;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 10px;
+    font-family:\9ED1\4F53,\5FAE\8F6F\96C5\9ED1;
+}
+.item_top{
+    padding-top: 30px;
+}
+.item{
+    padding-top:70px;
+}
+.item_label{
+    text-align:center;
+    font-size:20px;
+    position:relative;
+    color:#000000;
+    vertical-align:middle
+}
+.item_link{
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 1.3em;
+    font-family:\9ED1\4F53,\5FAE\8F6F\96C5\9ED1;
+    color:#2989cb;
+}
+.item_check{
+    padding-top: 50px;
+    color:#000000;
+    vertical-align:middle
+}
+.register_frame_left{
+    position:relative;
+    height:500px;
+    //width:800px;
+    padding-left: 0;
+    padding-right:0px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background:#fff;
+    margin-top: 60px;
+  //  border:2px solid #454;
+}
+.register_frame_right{
+    height:500px;
+    margin-top:60px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background:#fff;
+   //border:2px solid #579;
+}
+.register_item{
+    padding-top:40px;
+}
